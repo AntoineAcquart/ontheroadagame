@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/twitch.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "frontend"
 }

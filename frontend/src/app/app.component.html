@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<div id="app-container">
+  <div [id]="isMobile ? 'mobile-navbar' : 'computer-navbar'">
+    <app-navbar [isMobile]="isMobile"></app-navbar>
+  </div>
+  <main [style.height]="isMobile ? '93%' : '85%'">
+    <router-outlet></router-outlet>
+  </main>
+</div>

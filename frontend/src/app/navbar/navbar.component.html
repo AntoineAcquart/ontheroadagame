@@ -1,1 +1,35 @@
-<p>navbar works!</p>
+<div id="navbar">
+  <img src="assets/images/logo.png" *ngIf="!isMobile" />
+  <ul>
+    <li>
+      <a routerLink="/live" routerLinkActive="active">
+        <span class="material-icons">tv</span>
+        <span class="nav-text" *ngIf="!isMobile">LIVE</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/jeux" routerLinkActive="active">
+        <span class="material-icons">games</span>
+        <span class="nav-text" *ngIf="!isMobile">JEUX</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/accueil" routerLinkActive="active">
+        <span class="material-icons">home</span>
+        <span class="nav-text" *ngIf="!isMobile">ACCUEIL</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/factions" routerLinkActive="active">
+        <span class="material-icons">outlined_flag</span>
+        <span class="nav-text" *ngIf="!isMobile">FACTIONS</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/videos" routerLinkActive="active">
+        <span class="material-icons">video_library</span>
+        <span class="nav-text" *ngIf="!isMobile">VIDEOS</span>
+      </a>
+    </li>
+  </ul>
+</div>

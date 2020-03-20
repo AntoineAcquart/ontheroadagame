@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./games.component.sass']
 })
 export class GamesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  private currentVideoIndex: number;
+  private videos: string[] = [
+    'assets/videos/fall.mov',
+    'assets/videos/jump.mov'
+  ];
 
   ngOnInit() {
+    this.currentVideoIndex = 0;
   }
 
+  changeVideo() {
+    this.currentVideoIndex = this.videos[this.currentVideoIndex + 1]
+      ? this.currentVideoIndex + 1
+      : 0;
+  }
 }

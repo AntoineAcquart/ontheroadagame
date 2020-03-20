@@ -1,0 +1,74 @@
+.factions-container
+    position: absolute
+    top: 17%
+    left: 0%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    width: 100%
+    justify-content: center
+
+    >div
+        box-sizing: border-box
+        width: 50%
+        min-width: 500px
+
+    .factions-score
+        border-right: solid 3px #ccc
+        padding: 1% 2%
+
+    .factions-info
+        background-color: inherit
+        padding: 1% 2%
+
+    .factions-pbar
+        width: 100%
+        display: flex
+        flex-direction: row
+
+        .pbar-icon
+            width: 50px
+            height: 45px
+            margin: 1%
+            background-color: #000
+            border-radius: 50px
+
+        .bar-name
+            text-transform: uppercase
+            font-weight: bold
+
+        .barplusname
+            padding-top: 1%
+            width: 100%
+
+        .pbar
+            height: 25px
+            width: 100%
+            border: 1px solid #aaaaaa
+
+            .progress
+                height: 100%
+
+    #blue-pbar .progress
+        width: 73%
+        background-color: blue
+    #red-pbar .progress
+        width: 56%
+        background-color: red
+    #green-pbar .progress
+        width: 36%
+        background-color: green
+    #yellow-pbar .progress
+        width: 12%
+        background-color: yellow
+
+@media (max-width:1000px)
+    .factions-score
+        border: none!important
+
+@media (max-width:600px)
+    .factions-container
+        top: 2%
+        margin-bottom: 9%
+        >div
+            min-width: 301px

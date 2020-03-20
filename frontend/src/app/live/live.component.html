@@ -1,0 +1,21 @@
+<!-- <div id="twitch-embed"></div> -->
+<div [style.height]="getTwitchHeight() + 'px'" class="twitch">
+  <iframe
+    src="https://player.twitch.tv/?channel=ontheroadagame"
+    [height]="(twitchPlayerWidth * 9) / 16"
+    [width]="twitchPlayerWidth"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="true"
+  >
+  </iframe>
+  <iframe
+    frameborder="0"
+    scrolling="no"
+    id="chat_embed"
+    src="https://www.twitch.tv/embed/ontheroadagame/chat?darkpopout"
+    [height]="getChatHeight()"
+    [width]="twitchChatWidth"
+  >
+  </iframe>
+</div>

@@ -1,1 +1,10 @@
-<p>videos works!</p>
+<div id="container">
+    <div class="video-container">
+        <div class="item" *ngFor="let video of videos">
+            <h2>{{ video.title }}</h2>
+            <iframe [src]="getURL(video)" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="100%"
+                X-Frame-Options="deny" [height]="videoHeight + 'px'" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

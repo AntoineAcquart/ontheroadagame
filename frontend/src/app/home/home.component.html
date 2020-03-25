@@ -1,14 +1,57 @@
-<div class="up">
-    <p class="titre">Bienvenue chez On The Road A Game !</p></div>
-    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique recusandae tempore veritatis, eos sapiente voluptate nobis voluptatibus fugit, sint, debitis delectus?</p>
-<div class="down">
-    <iframe src="https://www.youtube.com/embed/EvxFepfovjk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="front">
-        <div class="button-border">
-        <div class="button">
-            <p class="text-button">REJOINDRE LE LIVE</p>
-            <div class="coupure"></div>
+<div id="container">
+    <div class="introduction-container">
+        <h1>Venez voyager à travers les yeux de nos <span>aventuriers</span> !</h1>
+        <div class="item">
+            <iframe src="https://www.youtube.com/embed/EvxFepfovjk" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="500px"
+                height="281px" allowfullscreen></iframe>
         </div>
+
+        <div class="item-cut"></div>
+    </div>
+
+    <div id="presentation-container">
+        <div class="presentation">
+            <div class="panel" *ngFor="let panel of presentationPanels; let index">
+                <span class="panel-title"
+                    (click)="currentPresentationPanel = currentPresentationPanel === index ? -1 : index">{{ panel.title }}</span>
+                <div class="panel-expension" *ngIf="currentPresentationPanel === index">
+                    <mat-divider></mat-divider>
+                    <span class="panel-description">
+                        <span class="material-icons">{{ panel.icon }}</span>
+                        {{ panel.description }}
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <p>Made by <span>Team 19</span> for <span>On The Road A Game</span></p>
+    </footer>
 </div>
+
+<!-- <div class="up">
+    <p class="titre">Bienvenue chez On The Road A Game !</p>
+  </div>
+  <p class="desc">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    recusandae tempore veritatis, eos sapiente voluptate nobis voluptatibus
+    fugit, sint, debitis delectus?
+  </p>
+  <div class="down">
+    <iframe
+      src="https://www.youtube.com/embed/EvxFepfovjk"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="front">
+      <div class="button-border">
+        <div class="button">
+          <p class="text-button">REJOINDRE LE LIVE</p>
+          <div class="coupure"></div>
+        </div>
+      </div>
+    </div>
+  </div> -->

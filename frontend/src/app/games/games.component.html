@@ -1,19 +1,11 @@
 <div id="games-container">
-  <video
-    class="video"
-    width="70%"
-    height="auto"
-    [src]="videos[currentVideoIndex]"
-    (ended)="changeVideo()"
-    autoplay
-  ></video>
+  <video class="video" width="40%" height="auto" [src]="videos[currentVideoIndex]" (ended)="changeVideo()"
+    autoplay></video>
 
   <div class="front">
-    <div class="button-border">
-      <div class="button">
-        <p class="text-button">PLAY</p>
-        <div class="coupure"></div>
-      </div>
+    <div class="button">
+      <p class="text-button">PLAY</p>
+      <div class="coupure"></div>
     </div>
   </div>
 </div>

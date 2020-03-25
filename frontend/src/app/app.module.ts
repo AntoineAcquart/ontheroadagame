@@ -12,7 +12,7 @@ import { VideosComponent } from './videos/videos.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatCarouselModule
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

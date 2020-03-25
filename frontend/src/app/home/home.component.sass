@@ -1,0 +1,68 @@
+.up
+    text-align: center
+    
+
+.down
+    text-align: center
+    .front
+        top: 0
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 10
+        .button-border
+            background-color: #ffffff
+            width: 350px
+            height: 200px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+        .button
+            transition-duration: 0.1s
+            width: 250px
+            height: 100px
+            font-size: 70%
+            text-align: center
+            background-color: yellow
+            border: 1px solid yellow
+            position: relative
+            display: block
+            box-shadow: 1px -1px #dbd800, 2px -2px #dbd800, 3px -3px #dbd800, 0.5px -0.5px #dbd800, 0.7px -0.7px #dbd800, 0.2px -0.2px #dbd800, 4px -4px #dbd800, 5px -5px #dbd800
+
+        .coupure
+            border: none
+            background-color: white
+            font-size: 0px
+            content: "."
+            position: absolute
+            left: 0
+            bottom: 0
+            display: block
+            width: 30px
+            height: 100px
+            margin-left: 10px
+            margin-bottom: -48px
+            transform: rotate(120deg)
+
+        .text-button
+            transition-duration: 0.1s
+            position: absolute
+            margin-left: 7%
+            margin-top: 4%
+            font-size: 300%
+            color: white
+            text-shadow: -1px 1px 0 #dbd800,1px -1px 0 yellow, -2px 2px 0 #dbd800,2px -2px 0 yellow, -0.5px 0.5px 0 #dbd800,0.5px -0.5px 0 yellow, -3px 3px 0 #dbd800,3px -3px 0 yellow
+
+        .button:hover
+            cursor: pointer
+            background-color: #dbd800
+            box-shadow: none
+            transition-duration: 0.1s
+            border: none
+            .text-button
+                transition-duration: 0.1s
+                text-shadow: none
+
